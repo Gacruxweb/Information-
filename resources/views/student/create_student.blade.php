@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container ">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-5">
             <div class="card">
                 <div class="card-header">{{ __('Create Student') }}</div>
 
                 <div class="card-body">
                 <div class="container">
-    <h2 class="mt-5 mb-4">Registration Form</h2>
-    <form action="{{route('store.student')}}" method="post">
+    <h2 class="mt-5 mb-4 bg bg-info">Registration Form</h2>
+    <form action="{{route('store.student')}}" method="post" class="bg bg-info">
         @csrf
       <div class="form-group">
         <label for="name">Name:</label>
